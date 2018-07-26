@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=898ffc72e88c5f89c3d3274f84335e20'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=YOUR_API_KEY'
 
     if request.method == 'POST':
         form = CityForm(request.POST)
